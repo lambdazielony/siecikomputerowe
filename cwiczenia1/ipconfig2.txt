@@ -1,0 +1,30 @@
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : DESKTOP-DB3HBPD
+   Primary Dns Suffix  . . . . . . . :
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : wmii.local
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : wmii.local
+   Description . . . . . . . . . . . : Intel(R) PRO/1000 MT Desktop Adapter
+   Physical Address. . . . . . . . . : 08-00-27-65-A4-EF
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::4d44:ddc8:9b79:76af%6(Preferred)
+   IPv4 Address. . . . . . . . . . . : 192.168.13.248(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : czwartek, 23 lutego 2023 12:49:14
+   Lease Expires . . . . . . . . . . : czwartek, 23 lutego 2023 14:49:14
+   Default Gateway . . . . . . . . . : 192.168.13.1
+   DHCP Server . . . . . . . . . . . : 192.168.13.1
+   DHCPv6 IAID . . . . . . . . . . . : 101187623
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2B-89-05-EF-08-00-27-65-A4-EF
+   DNS Servers . . . . . . . . . . . : 213.184.8.5
+                                       213.184.8.10
+                                       213.184.8.2
+   NetBIOS over Tcpip. . . . . . . . : Enabled
