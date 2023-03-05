@@ -14,6 +14,7 @@ Ping statistics for 150.254.11.7:
     Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
 Approximate round trip times in milli-seconds:
     Minimum = 17ms, Maximum = 24ms, Average = 21ms
+-------------------------------------------------------------------------
 
 Z opcja -n - okresla ile pakietów ma być wysłanych
 ping -n 2 et.put.poznan.pl
@@ -27,14 +28,18 @@ Ping statistics for 150.254.11.7:
 Approximate round trip times in milli-seconds:
     Minimum = 23ms, Maximum = 27ms, Average = 25ms
 
-
+----------------------------------------------------------------------------------------------
 Z opcją -i - okresla liczbe przeskoków pakietu 
 Z opcja -r - pojawia się request time out.
 
+
 W granicach 12-13ms dla et.put.poznan.pl
 W granicach 4-4ms dla wp.pl
+
 Informacje dotyczace tego, czy host odpowiada, ile czasu mu to zajmuje i ile utracił pakietów
 Można poznać też dokładny adres IP. 
+
+-----------------------------------------------------------------------------------------------
 
 b) W porównaniu do et.put.poznan.pl czas podróżny pakietu jest bardzo mały (bliski 0ms)
 ping 127.0.0.1
@@ -50,7 +55,7 @@ Ping statistics for 127.0.0.1:
 Approximate round trip times in milli-seconds:
     Minimum = 0ms, Maximum = 0ms, Average = 0ms
 
-
+------------------------------------------------------------------------------------------------
 c) Wiadomości ICMP będą wysyłane przez hosta, jeżeli u niego nastąpiła awaria.
 Informacje dostarczone za pomocą ping dostępnego online ze strony centralops.net
 DOMAIN NAME:           poznan.pl
@@ -78,7 +83,7 @@ https://home.pl/kontakt
 WHOIS database responses: https://dns.pl/en/whois
 WHOIS displays data with a delay not exceeding 15 minutes in relation to the .pl Registry system
 
-
+--------------------------------------------------------------------------------------------------
 
 d) Pathping jest dostępne - można poznać trasę pakiety 
 Na początku ustalana jest trasa między dwoma hostami a następnie pingowany jest każdy z węzłów na tej trasie.
@@ -97,6 +102,8 @@ over a maximum of 30 hops:
   9  PUTNET-X450A-A3-2.put.poznan.pl [150.254.6.58]
  10     *        *        *
 Computing statistics for 225 seconds...
+
+-----------------------------------------------------------------------------------------------------
 
 Z opcją -n:
 C:\Users\local>pathping 150.254.29.65 -n
