@@ -1,0 +1,51 @@
+Zadanie 4.1 
+Podpunkt 5.
+a) komputer wysyłał 4 wiadomości Echo (ping) request
+b) komputer otrzymał 4 wiadomości Echo (ping) reply
+c) Źródło - 192.168.13.21, ASUSTekC_cd:8a:8a (bc:ae:c5:cd:8a:8a), 
+   Odbiorca - 142.250.186.206, Dst: fc:f9:38:a3:a1:4f (fc:f9:38:a3:a1:4f)
+d) Adres MAC jest zapisany w postaci szestastkowej a IPv4 w postaci binarnej
+e) ttl=128
+f) Okres ważności pakietu - jest to liczba przeskoków, które może on wykonać na swojej trasie. Gdy licznik TTL będzie wskazywal 0, to odbierający router usunie go i wyśle komunikat ICMP do nadawcy. 
+g) 
+h) Wystąpił błąd ICMP, ponieważ był bardzo niski TTL. (ttl=2)
+i) W załączniku
+
+
+Zadanie 4.2
+Podpunkt 3.
+a) Komputer wysłał 31 wiadomości typu Echo (ping) request z różną ilością ttl
+b) Komputer odebrał wiele wiadomości ICMP, które mówiły o przekroczeniu TTL pakietu.
+c) Źródło - 192.168.13.21, ASUSTekC_cd:8a:8a (bc:ae:c5:cd:8a:8a), 
+   Odbiorca - 142.250.186.206, Dst: fc:f9:38:a3:a1:4f (fc:f9:38:a3:a1:4f)
+d) Wartość parametru TTL wzrastała od ttl=1 do ttl=9 w zapytaniach 
+   Wartość parametru TTL wynosiła ttl=118 w odpowiedzi od hosta
+e) W załączniku 
+
+
+Zadanie 5.3
+Podpunkt 3. 
+a) Komputer wysłał 9 wiadomości typu Echo (ping) request, z różną ilością ttl
+b) Komputer odebrał wiele wiadomości ICMP, które mówiły o przekroczeniu TTL pakietu.
+c) Tak wartości jest zmieniana i rośnie od 1 do 9
+d) Polecenie wysyłało pakiety ze zwiększającą się ilościa TTL. Gdy pakiet miał niski TTL, to docierał do bliskich routerów. Te routery wysyłały wiadomość ICMP do nadawcy, 
+dzięki czemu była możliwa identyfikacja ich adresu IP. Potem polecenie zwiększało TTL pakietu i w taki sposób docierało do kolejnych routerów. 
+e) W załączniku
+
+Zadanie 5.4 
+Dla protokołu telnet nie pokazywało się nic. Nie pozwala połączyć się za pomocą telnet
+Dla protokołu SSH - jest to protokół szyfrowany 
+Hasło i login są przesyłane zaszyfrowane
+Protokół SSH jest bezpieczniejszy niż telnet.
+
+
+Zadanie 5.5 
+Połączono się przykładowo do ftp.adobe.com
+Przysyłane pakiety nie są szyfrowane i widać ich zawartość. 
+Istnieje protokół SFTP, który jest bezpieczniejszą wersją FTP. Następuje tam szyfrowanie pakietów. 
+
+
+
+
+
+
