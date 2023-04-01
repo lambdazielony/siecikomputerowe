@@ -1,0 +1,52 @@
+4.1
+
+nslookup www.google.com - polecenie podało adres ip strony google.com
+DNS request timed out.
+    timeout was 2 seconds.
+Server:  UnKnown
+Address:  213.184.8.5
+
+DNS request timed out.
+    timeout was 2 seconds.
+DNS request timed out.
+    timeout was 2 seconds.
+DNS request timed out.
+    timeout was 2 seconds.
+DNS request timed out.
+    timeout was 2 seconds.
+*** Request to UnKnown timed-out
+------------------------------------------------
+nslookup finger google.com
+DNS request timed out.
+    timeout was 2 seconds.
+Server:  UnKnown
+Address:  142.250.186.206
+
+DNS request timed out.
+    timeout was 2 seconds.
+DNS request timed out.
+    timeout was 2 seconds.
+*** Request to UnKnown timed-out
+----------------------------------------------
+nslookup ls google.com
+DNS request timed out.
+    timeout was 2 seconds.
+Server:  UnKnown
+Address:  142.250.186.206
+
+DNS request timed out.
+    timeout was 2 seconds.
+DNS request timed out.
+    timeout was 2 seconds.
+*** Request to UnKnown timed-out
+
+
+
+
+
+
+
+
+
+
+
