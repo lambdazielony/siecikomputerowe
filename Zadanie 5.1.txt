@@ -1,0 +1,173 @@
+netstat 
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:11300        view-localhost:56325   ESTABLISHED
+  TCP    127.0.0.1:11300        view-localhost:56327   ESTABLISHED
+  TCP    127.0.0.1:56325        view-localhost:11300   ESTABLISHED
+  TCP    127.0.0.1:56327        view-localhost:11300   ESTABLISHED
+  TCP    192.168.13.21:59624    testad:2222            ESTABLISHED
+  TCP    192.168.13.21:62443    lb-140-82-114-26-iad:https  ESTABLISHED
+  TCP    192.168.13.21:62449    h1-epnsbroker02:8883   ESTABLISHED
+  TCP    192.168.13.21:62454    40.113.103.199:https   ESTABLISHED
+  TCP    192.168.13.21:62505    h1-epnsbroker01:8883   ESTABLISHED
+  TCP    192.168.13.21:62566    a23-64-12-59:https     CLOSE_WAIT
+  TCP    192.168.13.21:62578    192.229.221.95:http    CLOSE_WAIT
+
+Polecenie bez parametrów wyświetla bieżące połączenia.
+
+---------------------------------------------------------------------------------
+netstat -a
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    0.0.0.0:135            DESKTOP-718DGH2:0      LISTENING
+  TCP    0.0.0.0:445            DESKTOP-718DGH2:0      LISTENING
+  TCP    0.0.0.0:902            DESKTOP-718DGH2:0      LISTENING
+  TCP    0.0.0.0:912            DESKTOP-718DGH2:0      LISTENING
+  TCP    0.0.0.0:5040           DESKTOP-718DGH2:0      LISTENING
+  TCP    0.0.0.0:11100          DESKTOP-718DGH2:0      LISTENING
+  TCP    0.0.0.0:49664          DESKTOP-718DGH2:0      LISTENING
+  TCP    0.0.0.0:49665          DESKTOP-718DGH2:0      LISTENING
+  TCP    0.0.0.0:49666          DESKTOP-718DGH2:0      LISTENING
+  TCP    0.0.0.0:49667          DESKTOP-718DGH2:0      LISTENING
+  TCP    0.0.0.0:49668          DESKTOP-718DGH2:0      LISTENING
+  TCP    0.0.0.0:49676          DESKTOP-718DGH2:0      LISTENING
+  TCP    127.0.0.1:11200        DESKTOP-718DGH2:0      LISTENING
+  TCP    127.0.0.1:11300        DESKTOP-718DGH2:0      LISTENING
+  TCP    127.0.0.1:11300        view-localhost:56325   ESTABLISHED
+  TCP    127.0.0.1:11300        view-localhost:56327   ESTABLISHED
+  TCP    127.0.0.1:50682        DESKTOP-718DGH2:0      LISTENING
+  TCP    127.0.0.1:56325        view-localhost:11300   ESTABLISHED
+  TCP    127.0.0.1:56327        view-localhost:11300   ESTABLISHED
+  TCP    169.254.159.126:139    DESKTOP-718DGH2:0      LISTENING
+  TCP    169.254.214.205:139    DESKTOP-718DGH2:0      LISTENING
+  TCP    192.168.13.21:139      DESKTOP-718DGH2:0      LISTENING
+  TCP    192.168.13.21:59624    testad:2222            ESTABLISHED
+  TCP    192.168.13.21:62443    lb-140-82-114-26-iad:https  ESTABLISHED
+  TCP    192.168.13.21:62449    h1-epnsbroker02:8883   ESTABLISHED
+  TCP    192.168.13.21:62454    40.113.103.199:https   ESTABLISHED
+  TCP    192.168.13.21:62505    h1-epnsbroker01:8883   ESTABLISHED
+
+
+Polecenie wyświetliło tutaj także połączenia oczekujące "LISTENING"
+------------------------------------------------------------------------------
+
+
+
+
+netstat -r
+===========================================================================
+Interface List
+ 19...0a 00 27 00 00 13 ......VirtualBox Host-Only Ethernet Adapter
+ 13...bc ae c5 cd 8a 8a ......Realtek PCIe GbE Family Controller
+  9...00 02 2a dd 4e 1a ......Realtek RTL8139/810x Family Fast Ethernet NIC
+ 15...00 50 56 c0 00 01 ......VMware Virtual Ethernet Adapter for VMnet1
+  8...00 50 56 c0 00 08 ......VMware Virtual Ethernet Adapter for VMnet8
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+          0.0.0.0          0.0.0.0     192.168.13.1    192.168.13.21     25
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+      169.254.0.0      255.255.0.0         On-link   169.254.159.126    291
+      169.254.0.0      255.255.0.0         On-link   169.254.214.205    291
+  169.254.159.126  255.255.255.255         On-link   169.254.159.126    291
+  169.254.214.205  255.255.255.255         On-link   169.254.214.205    291
+  169.254.255.255  255.255.255.255         On-link   169.254.159.126    291
+  169.254.255.255  255.255.255.255         On-link   169.254.214.205    291
+     192.168.13.0    255.255.255.0         On-link     192.168.13.21    281
+    192.168.13.21  255.255.255.255         On-link     192.168.13.21    281
+   192.168.13.255  255.255.255.255         On-link     192.168.13.21    281
+     192.168.56.0    255.255.255.0         On-link      192.168.56.1    281
+     192.168.56.1  255.255.255.255         On-link      192.168.56.1    281
+   192.168.56.255  255.255.255.255         On-link      192.168.56.1    281
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link      192.168.56.1    281
+        224.0.0.0        240.0.0.0         On-link     192.168.13.21    281
+        224.0.0.0        240.0.0.0         On-link   169.254.214.205    291
+        224.0.0.0        240.0.0.0         On-link   169.254.159.126    291
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link      192.168.56.1    281
+  255.255.255.255  255.255.255.255         On-link     192.168.13.21    281
+  255.255.255.255  255.255.255.255         On-link   169.254.214.205    291
+  255.255.255.255  255.255.255.255         On-link   169.254.159.126    291
+===========================================================================
+Persistent Routes:
+  None
+
+IPv6 Route Table
+===========================================================================
+Active Routes:
+ If Metric Network Destination      Gateway
+  1    331 ::1/128                  On-link
+ 19    281 fe80::/64                On-link
+ 13    281 fe80::/64                On-link
+  8    291 fe80::/64                On-link
+ 15    291 fe80::/64                On-link
+  8    291 fe80::7e4d:7386:5dc4:ac0/128
+                                    On-link
+ 19    281 fe80::8885:c812:f884:6259/128
+                                    On-link
+ 13    281 fe80::aef3:1c8a:7d9f:36/128
+                                    On-link
+ 15    291 fe80::d1c7:c291:8bc0:1a43/128
+                                    On-link
+  1    331 ff00::/8                 On-link
+ 19    281 ff00::/8                 On-link
+ 13    281 ff00::/8                 On-link
+  8    291 ff00::/8                 On-link
+ 15    291 ff00::/8                 On-link
+===========================================================================
+Persistent Routes:
+  None
+----------------------------------------------------------------------------------------
+netstat -e
+Interface Statistics
+
+                           Received            Sent
+
+Bytes                    3442446704       917094612
+Unicast packets              448194         3120510
+Non-unicast packets           22326           12186
+Discards                          0               0
+Errors                            0               0
+Unknown protocols                 0
+
+
+Polecenie wyświetliło listę interfejsów, tabelę rutingu IPv4 i IPv6 oraz statystyki interfejsów 
+takie jak ilość odebranych i wysłanych danych, ilośc uniakatowych i nieunikatowych pakietów, ilość błędów itp. 
+
+----------------------------------------------------------------------------------------
+
+netstat -n
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:11300        127.0.0.1:56325        ESTABLISHED
+  TCP    127.0.0.1:11300        127.0.0.1:56327        ESTABLISHED
+  TCP    127.0.0.1:56325        127.0.0.1:11300        ESTABLISHED
+  TCP    127.0.0.1:56327        127.0.0.1:11300        ESTABLISHED
+  TCP    192.168.13.21:59624    213.184.0.58:2222      ESTABLISHED
+  TCP    192.168.13.21:62449    91.228.165.145:8883    ESTABLISHED
+  TCP    192.168.13.21:62454    40.113.103.199:443     ESTABLISHED
+  TCP    192.168.13.21:62505    91.228.165.144:8883    ESTABLISHED
+  TCP    192.168.13.21:62956    69.173.144.165:443     TIME_WAIT
+  TCP    192.168.13.21:62962    146.75.118.49:443      ESTABLISHED
+  TCP    192.168.13.21:62999    140.82.113.25:443      ESTABLISHED
+  TCP    192.168.13.21:63016    104.18.32.68:80        TIME_WAIT
+  TCP    192.168.13.21:63017    104.18.32.68:80        TIME_WAIT
+  TCP    192.168.13.21:63018    104.18.32.68:80        TIME_WAIT
+  TCP    192.168.13.21:63023    104.26.13.220:443      ESTABLISHED
+  TCP    192.168.13.21:63024    104.26.13.220:443      TIME_WAIT
+  TCP    192.168.13.21:63025    91.228.167.170:80      TIME_WAIT
+
+Polecenie wyświetliło aktywne połączenia w formie liczbowej
