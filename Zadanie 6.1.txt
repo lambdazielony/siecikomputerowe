@@ -1,0 +1,44 @@
+arp -s google.com 00-00-00-00-00-00
+The ARP entry addition failed: Żądana operacja wymaga podniesienia uprawnień.
+
+Z poziomu konta użytkownika nie można zmienić skojarzyć adresu internetowego z fizycznym 
+
+--------------------------------------------------------------------------------
+arp -a - Znajdują się tutaj wpisy, więc komputer komunikował się w tym czasie z innymi urządzeniami na każdym interfejsie
+ 
+Interface: 169.254.214.205 --- 0x8
+  Internet Address      Physical Address      Type
+  169.254.255.255       ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+
+Interface: 192.168.13.21 --- 0xd
+  Internet Address      Physical Address      Type
+  192.168.13.1          fc-f9-38-a3-a1-4f     dynamic
+  192.168.13.30         bc-ae-c5-cd-8a-70     dynamic
+  192.168.13.255        ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+
+Interface: 169.254.159.126 --- 0xf
+  Internet Address      Physical Address      Type
+  169.254.255.255       ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+
+Interface: 192.168.56.1 --- 0x13
+  Internet Address      Physical Address      Type
+  192.168.56.255        ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
